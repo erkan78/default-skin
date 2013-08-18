@@ -2636,7 +2636,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="grey" font="Regular;20" foregroundColor="white" halign="left" position="15,39" render="Label" size="350,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
-    <widget backgroundColor="white" font="Regular;35" foregroundColor="white" halign="right" position="333,20" render="Label" size="477,43" source="Title" transparent="1" />
+    <widget backgroundColor="white" font="Regular;30" foregroundColor="white" halign="right" position="333,20" render="Label" size="477,43" source="Title" transparent="1" />
     <widget backgroundColor="background" name="list" position="30,80" scrollbarMode="showOnDemand" selectionPixmap="om-black/menu/sel800x50.png" size="780,450" transparent="1" />
     <widget name="text" position="0,0" size="0,0" />
   </screen>
