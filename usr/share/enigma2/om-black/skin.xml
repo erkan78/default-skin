@@ -1763,8 +1763,8 @@
     <widget name="Volume" pixmap="om-black/volumeslider_bar.png" position="38,5" size="153,17" transparent="1" zPosition="3" />
     <widget font="Regular;16" foregroundColor="white" halign="center" render="VVolumeText" source="global.CurrentTime" position="2,4" size="28,21" zPosition="20" transparent="1" />
   </screen>
-  <screen flags="wfNoBorder" name="Mute" position="27,15" size="50,55" title="Mute" zPosition="10" backgroundColor="transparent">
-    <ePixmap pixmap="om-black/mute.png" position="12,5" size="50,55" transparent="1" />
+  <screen flags="wfNoBorder" name="Mute" position="27,15" size="55,55" title="Mute" zPosition="10" backgroundColor="transparent">
+    <ePixmap pixmap="om-black/mute.png" position="10,5" size="55,55" transparent="1" />
   </screen>
   <screen name="Menu" position="center,center" size="450,390" title="Main menu" backgroundColor="un20000000">
     <widget font="Regular;23" position="10,10" render="Label" size="430,35" source="title" backgroundColor="background" />
