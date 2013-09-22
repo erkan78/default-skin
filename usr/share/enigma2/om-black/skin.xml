@@ -3830,6 +3830,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position="340,573" render="Label" size="200,26" source="key_green" transparent="1" zPosition="1" />
     <widget backgroundColor="grey" font="Regular;20" foregroundColor="white" halign="left" position="600,573" render="Label" size="200,26" source="key_yellow" transparent="1" zPosition="1" />
   </screen>
+  <screen flags="wfNoBorder" name="NetworkMacSetup" position="center,center" size="1100,605" title="MAC-adress setup">
+    <ePixmap pixmap="om-black/menu/mainbg.png" position="0,0" size="1100,605" zPosition="-10" />
+    <widget backgroundColor="grey" font="Regular;26" foregroundColor="white" halign="left" position="15,10" render="Label" size="180,28" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+    <widget backgroundColor="grey" font="Regular;20" foregroundColor="white" halign="left" position="15,39" render="Label" size="350,25" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;35" foregroundColor="white" halign="right" position="270,20" size="800,43" text="MAC-adress setup" transparent="1" />
+    <ePixmap alphatest="on" pixmap="om-black/menu/net.png" position="20,375" size="250,180" />
+    <widget backgroundColor="background" itemHeight="30" name="config" position="423, 80" scrollbarMode="showOnDemand" selectionPixmap="om-black/menu/sel700x30.png" size="650,420" transparent="1" />
+    <widget backgroundColor="black" font="Regular;22" halign="center" position="423,520" render="Label" size="650, 25" source="introduction" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="om-black/buttons/red.png" position=" 30,570" size="35,27" />
+    <ePixmap alphatest="blend" pixmap="om-black/buttons/green.png" position="290,570" size="35,27" />
+    <widget backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position=" 80,573" render="Label" size="200,26" source="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position="340,573" render="Label" size="200,26" source="key_green" transparent="1" zPosition="1" />
+  </screen>
   <screen flags="wfNoBorder" name="NetworkAdapterSelection" position="center,center" size="1100,605" title="Select Network Adapter">
     <ePixmap pixmap="om-black/menu/mainbg.png" position="0,0" size="1100,605" zPosition="-10" />
     <widget backgroundColor="grey" font="Regular;26" foregroundColor="white" halign="left" position="15,10" render="Label" size="180,28" source="global.CurrentTime" transparent="1">
