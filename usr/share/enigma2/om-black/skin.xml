@@ -5475,6 +5475,42 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position="480,573" render="Label" size="150,26" source="key_yellow" transparent="1" zPosition="1" />
     <widget backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position="680,573" render="Label" size="150,26" source="key_blue" transparent="1" zPosition="1" />
   </screen>
+  <screen name="JobView" position="center,center" size="1100,605" flags="wfNoBorder">
+  <ePixmap pixmap="om-black/menu/mainbg.png" position="2,1" size="1091,605" zPosition="-10" />
+  <widget backgroundColor="black" font="Regular;26" foregroundColor="white" halign="right" position="897,7" render="Label" size="180,28" source="global.CurrentTime" transparent="1">
+  <convert type="ClockToText">Format:%H:%M:%S</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular;20" foregroundColor="white" halign="right" position="726,37" render="Label" size="350,25" source="global.CurrentTime" transparent="1">
+  <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <panel name="BasicTemplate" />
+  <widget source="job_name" render="Label" position="30,80" size="1040,60" font="Regular;28" />
+  <widget source="job_task" render="Label" position="30,157" size="1040,50" font="Regular;23" />
+  <widget source="job_progress" render="Progress" position="30,310" size="1040,36" borderWidth="2" backgroundColor="grey" />
+  <widget source="job_progress" render="Label" position="404,311" size="280,32" font="Regular;28" foregroundColor="white" zPosition="2" halign="center" transparent="1">
+    <convert type="ProgressToText" />
+  </widget>
+  <widget source="job_status" render="Label" position="30,355" size="480,26" font="Regular;23" />
+  <widget name="config" position="30,403" size="480,20" />
+  <widget source="cancelable" render="Pixmap" pixmap="om-black/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="cancelable" render="FixedLabel" text="Cancel" position="80,570" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="finished" render="Pixmap" pixmap="om-black/buttons/green.png" position="290,570" size="35,27" alphatest="blend">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="finished" render="FixedLabel" text="OK" position="340,570" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="backgroundable" render="Pixmap" pixmap="om-black/buttons//blue.png" position="830,570" size="35,27" alphatest="blend">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="880,570" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
     <sub font="Regular;30" foregroundColor="undcdcdc" name="Subtitle_Regular" shadowColor="#40101010" shadowOffset="3,3" />
